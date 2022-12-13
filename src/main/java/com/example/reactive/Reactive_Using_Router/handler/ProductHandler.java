@@ -3,6 +3,7 @@ package com.example.reactive.Reactive_Using_Router.handler;
 import com.example.reactive.Reactive_Using_Router.dto.ProductDto;
 import com.example.reactive.Reactive_Using_Router.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.reactive.function.server.ServerRequest;
@@ -12,7 +13,7 @@ import reactor.core.publisher.Mono;
 
 import java.util.Optional;
 
-@Service
+@Component
 public class ProductHandler {
     @Autowired
     private ProductService productService;
